@@ -1,14 +1,13 @@
-import * as config from './config';
 import * as configPrivate from './config.private';
 import { servicioMssql } from './pucoImporter'
 // Require
 const MongoClient = require('mongodb').MongoClient;
-const url = config.mongoDB.host;
-const coleccion = config.mongoDB.collection;
+const url = configPrivate.mongoDB.host;
+const coleccion = configPrivate.mongoDB.collection;
 const usuario: any = configPrivate.auth.user;
 const pass: any = configPrivate.auth.password;
-const server: any = config.serverSql.server;
-const db: any = config.serverSql.database;
+const server: any = configPrivate.serverSql.server;
+const db: any = configPrivate.serverSql.database;
 const consulta: any = 'SELECT OS.cod_os as cod_Puco, OS.nombre FROM obras_sociales as OS';
 const servicio: any = new servicioMssql();
 //Se importan los datos desde SQL a un archivo json,

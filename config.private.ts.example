@@ -2,3 +2,16 @@ export const auth = {
     user: 'username',
     password: 'pass'
 };
+
+export const serverSql = {
+    server: ---, 
+    database: ----,
+    options: {
+        ---
+    }
+}
+
+export const mongoDB= {
+        host: -----,
+        collection:----
+    }
