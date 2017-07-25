@@ -1,0 +1,16 @@
+{
+  "name": "pucoimporter",
+  "version": "1.0.0",
+  "description": "Importador de obras sociales para desde sql PUCO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.30",
+    "mssql": "^4.0.4",
+    "require": "^2.4.20"
+  }
+}
